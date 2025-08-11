@@ -1,0 +1,36 @@
+# === SYSTEM FILES ===
+.DS_Store
+Thumbs.db
+
+# === VSCODE SETTINGS ===
+.vscode/
+*.code-workspace
+
+# === NODE & BUILD FILES ===
+node_modules/
+dist/
+build/
+
+# === ENVIRONMENT FILES ===
+.env
+.env.local
+.env.*.local
+
+# === LOG FILES ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === TEMP FILES ===
+*.tmp
+*.temp
+*.swp
+
+# === DEPLOYMENT FILES ===
+.vercel/
+.netlify/
+
+# === BACKUP FILES ===
+*.bak
+*.old
