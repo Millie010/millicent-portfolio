@@ -1,0 +1,132 @@
+/* ==== COLOR VARIABLES ==== */
+:root {
+    --bg: #0d1b2a;
+    --text: #e0e1dd;
+    --gold: #ffb703;
+    --teal: #70c1b3;
+    --coral: #ee6c4d;
+}
+
+/* ==== GLOBAL STYLES ==== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* ==== HERO SECTION ==== */
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--gold);
+}
+
+header h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: var(--teal);
+}
+
+/* ==== SOCIAL ICONS ==== */
+.social-icons a {
+    color: var(--gold);
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: var(--coral);
+}
+
+/* ==== SECTIONS ==== */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+/* ==== PROJECT CARDS ==== */
+.project-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ==== CONTACT FORM ==== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    background: var(--gold);
+    color: var(--bg);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: var(--coral);
+}
+
+/* ==== FOOTER ==== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+}
+
+/* ==== FLOATING CODE BACKGROUND ==== */
+.floating-code {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ==== FADE-IN ANIMATION ==== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==== MOBILE ==== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
